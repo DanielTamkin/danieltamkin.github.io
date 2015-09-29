@@ -1,0 +1,34 @@
+body{
+  background:#fff;
+  color:#273a34;
+  font-family:'WorkSans';
+}
+::-moz-selection { /* Code for Firefox */
+  color: #222;
+  background: #619dba;
+}
+::selection {
+    color: #222;
+    background: #619dba;
+}
+a{
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  -ms-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+a:hover{
+  color:#746969;
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  -ms-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+p a{
+  padding:1px 3px;
+  background:#fff;
+  box-sizing:border-box;
+  color:#201919;
+}
