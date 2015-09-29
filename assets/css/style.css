@@ -45,11 +45,16 @@ p a{
     position:relative;
     text-align:center;
   }
-  #site-hero h1{
+  #site-hero header{
+    padding:;
+    background:red;
+    text-align:left;
+  }
+  #site-hero header h1{
     text-align:left;
     font-size:2em;
   }
-  #site-hero h2{
+  #site-hero header h2{
     font-size:5.2em;
     font-weight:900;
   }
