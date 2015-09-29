@@ -61,9 +61,16 @@ p a{
     text-align:left;
     text-transform:uppercase;
     font-size:1.8em;
-
   }
   #site-hero header h2{
     font-size:5.2em;
     font-family:"WorkSans-Bold";
+  }
+  #site-hero header ul{
+    margin:0.2em 0;
+    width:100%;
+  }
+  #site-hero header ul li{
+    display:inline-block;
+    font-size:0.8em;
   }
