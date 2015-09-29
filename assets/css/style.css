@@ -32,3 +32,24 @@ p a{
   box-sizing:border-box;
   color:#201919;
 }
+/*> site*/
+  #site{
+    margin:3% 3%;
+    height:90%;
+    width:94%;background:#efefef;
+  }
+/*> site-hero*/
+  #site-hero{
+    height:100%;
+    width:100%;
+    position:relative;
+    text-align:center;
+  }
+  #site-hero h1{
+    text-align:left;
+    font-size:2em;
+  }
+  #site-hero h2{
+    font-size:5.2em;
+    font-weight:900;
+  }
