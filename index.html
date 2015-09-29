@@ -16,19 +16,21 @@
 <body>
   <div id="site">
     <section id="site-hero" style="background: url('assets/img/hero-shoreside.jpg') no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
-      <div class="center Container-Small">
-        <header>
-          <h1>danieltamkin</h1>
-          <h2>Web Designer.</h2>
-          <h2>Photographer.</h2>
-        </header>
-        <a href="http://github.com/danieltamkin"><div class="ghostb-grey">Github</div></a>
-        <a href="http://danieltamkin.com"><div class="ghostb-blue">danieltamkin.com</div></a>
+      <div class="wrapper">
+        <div class="center Container-Small">
+          <header>
+            <h1>danieltamkin</h1>
+            <h2>Web Designer.</h2>
+            <h2>Photographer.</h2>
+          </header>
+          <a href="http://github.com/danieltamkin"><div class="ghostb-grey">Github</div></a>
+          <a href="http://danieltamkin.com"><div class="ghostb-blue">danieltamkin.com</div></a>
+        </div>
       </div>
     </section>
   </div>
   <script>
-    $("#site-hero .center").centerThis();
+    $("#site-hero .center").centerThis();     // generic use
     jQuery("#site-hero h2").fitText(0.7, { minFontSize: '20px', maxFontSize: '90px' });
   </script>
 </body>

@@ -34,9 +34,11 @@ p a{
 }
 /*> site*/
   #site{
-    margin:3% 3%;
-    height:90%;
-    width:94%;background:#efefef;
+    height:100%;
+    width:100%;background:#efefef;
+    box-sizing:border-box;
+    border:20px solid #fff;
+    position:relative;
   }
 /*> site-hero*/
   #site-hero{
@@ -44,10 +46,15 @@ p a{
     width:100%;
     position:relative;
     text-align:center;
+    color:#fff;
+  }
+  #site-hero .wrapper{
+    height:100%;
+    width:100%;
+    background:rgba(50, 56, 80, 0.6);
   }
   #site-hero header{
-    padding:;
-    background:red;
+    padding:1em;
     text-align:left;
   }
   #site-hero header h1{
