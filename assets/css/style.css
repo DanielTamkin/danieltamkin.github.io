@@ -254,6 +254,6 @@ p a{
   }
   @media all and (max-width: 610px) {
     #site-footer .wrapper{
-      width:100%!important;
+      width:86%!important;
     }
   }
