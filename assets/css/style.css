@@ -1,15 +1,15 @@
 body{
-  background:#fff;
-  color:#273a34;
-  font-family:'WorkSans';
+  background:#ffffff;
+  color:#000000;
+  font-family:'Now',sans-serif;
 }
 ::-moz-selection { /* Code for Firefox */
-  color: #222;
-  background: #619dba;
+  color: #464c60;
+  background:#c4ff00;
 }
 ::selection {
-    color: #222;
-    background: #619dba;
+    color: #464c60;
+    background:#c4ff00;
 }
 a{
   -webkit-transition: all 100ms ease-in-out;
@@ -19,7 +19,7 @@ a{
   transition: all 100ms ease-in-out;
 }
 a:hover{
-  color:#746969;
+  color:#0500ff;
   -webkit-transition: all 100ms ease-in-out;
   -moz-transition: all 100ms ease-in-out;
   -ms-transition: all 100ms ease-in-out;
@@ -27,50 +27,233 @@ a:hover{
   transition: all 100ms ease-in-out;
 }
 p a{
-  padding:1px 3px;
-  background:#fff;
-  box-sizing:border-box;
-  color:#201919;
+  color:#0500ff;
 }
+/*> section.content*/
+  section.content{
+
+    box-sizing:border-box;
+    line-height: 1.9;
+    color:#222;
+    font-size:1em
+  }
+  section.content h1,
+  section.content h2,
+  section.content h3,
+  section.content h4,
+  section.content h5,
+  section.content h6{
+    margin:0.2em 0;
+    font-family:'Montserrat Bold';
+    line-height:1.1;
+  }
+  section.content h1{font-size:3em;}
+  section.content h2{font-size:2.6em;}
+  section.content h3{font-size:2.1em;}
+  section.content h4{font-size:1.9em;}
+  section.content h5{font-size:1.4em;}
+  section.content h6{font-size:0.9em;}
+  section.content p{
+    line-height:1.6;
+  }
+  section.content p a{
+    position:relative;
+    font-family:'Montserrat';
+  }
+  section.content p a:before{
+    content:'';
+    position:absolute;
+    bottom:-3px;
+    height:2px;
+    width:100%;
+    opacity:0;
+    background:#0003ff;
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+  }
+  section.content p a:hover:before{
+    opacity:1;
+    bottom:-1px;
+
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+  }
+  section.content ul{
+    margin:11px 0;
+    list-style:none;
+    color:#a9b1b1;
+    font-family:'Montserrat';
+  }
+  section.content ul li span{
+    display:block;
+  }
+  section.content ul li a{
+    color:#0500ff;
+  }
+  section.content ol{
+    margin:11px 0;
+    margin-left:18px;
+    list-style:decimal;
+  }
+  section.content hr{
+    margin:1.1em 0;
+    height:9px;
+    width:30%;
+    border:none;
+    border:6px solid #000;
+    opacity:1;
+  }
 /*> site*/
   #site{
-    height:100%;
-    width:100%;background:#efefef;
+    position:relative;
+    min-height:100%;
+    width:100%;
+    /*background:rgb(83, 71, 199);*/
+  }
+/*> site-wrap*/
+  .site-wrap {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -142px;
+  }
+  .site-wrap:after {
+    content: "";
+    display: block;
+  }
+  #site-footer, .site-wrap:after {
+    height: 140px;
+  }
+/*> site-body*/
+  #site-body{
+    /*padding:1.1em;
+    padding-top:4em;*/
     box-sizing:border-box;
-    border:20px solid #fff;
-    position:relative;
+    /*background:rgb(120, 120, 129);*/
+    min-height:100%;
   }
-/*> site-hero*/
-  #site-hero{
-    height:100%;
-    width:100%;
-    position:relative;
-    text-align:center;
-    color:#fff;
+  #site-body.center{
+    /*background:rgb(74, 89, 187);*/
   }
-  #site-hero .wrapper{
-    height:100%;
-    width:100%;
-    background:rgba(50, 56, 80, 0.6);
+  #site-body h1{
+    font-family:'Montserrat Bold';
   }
-  #site-hero header{
-    padding:1em;
-    text-align:left;
+
+  #site-body .content{
+    padding-top:2em;
   }
-  #site-hero header h1{
-    text-align:left;
-    text-transform:uppercase;
-    font-size:1.8em;
-  }
-  #site-hero header h2{
-    font-size:5.2em;
-    font-family:"WorkSans-Bold";
-  }
-  #site-hero header ul{
-    margin:0.2em 0;
-    width:100%;
-  }
-  #site-hero header ul li{
+  #site-body .content ul{
+    margin-right:2.6em;
     display:inline-block;
-    font-size:0.8em;
+		vertical-align:top;
+    font-size:1em;
+  }
+  #site-body .content ul li{
+    padding:0.3em 0.4em;
+    box-sizing:border-box;
+  }
+  #site-body .content ul a{
+    font-family:'Montserrat Bold';
+  }
+  #site-body .content ul p{
+    line-height:1.2!important;
+  }
+  @media all and (max-width: 610px) {
+    #site-body{
+      width:86%;
+    }
+    #site-body .content ul{
+      margin-right:1.4em;
+      vertical-align:none;
+    }
+    #site-body .content ul li{
+      padding:0.3em 0em;
+      box-sizing:border-box;
+    }
+
+  }
+/*> site-nav*/
+  #site-nav{
+    padding:1em 0;
+    width:100%;
+    box-sizing:border-box;
+  }
+  #site-nav .wrapper{
+    margin:0.6em auto;
+  }
+  #site-nav aside{
+    margin-top:-0.2em;
+    float:left;
+    text-transform:lowercase;
+    font-size:1.5em;
+    font-family:'Montserrat',sans-serif!important;
+    font-weight:900;
+  }
+  #site-nav ul{
+    float:right;
+    font-family:'Montserrat',sans-serif!important;
+  }
+  #site-nav ul li{
+    padding:0 0.9em;
+    margin:0px 0.4em;
+    margin-top:4px;
+    display:inline-block;
+    opacity:0.4;
+    font-size:0.9em;
+  }
+  #site-nav ul li:hover{
+    opacity:1;
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+  }
+/*> site-footer*/
+  #site-footer{
+    padding:1.6em 0;
+    width:100%;
+    box-sizing:border-box;
+    height:140px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    float:left;
+    /*background:#fbf6f6;*/
+    border-top:1px solid #efefef;
+  }
+  #site-footer .wrapper{
+    padding:1em 0;
+    box-sizing:border-box;
+  }
+  #site-footer .left{
+    max-width:600px;
+    width:60%;
+    float:left;
+  }
+  #site-footer .right{
+    display:inline-block;
+    float:right;
+  }
+  @media all and (max-width: 910px) {
+    #site-footer .left{
+      width:100%;
+    }
+    #site-footer .right{
+      display:inline-block;
+      float:left;
+    }
+    #site-footer .right p{
+      margin:0.6em 0;
+    }
+  }
+  @media all and (max-width: 610px) {
+    #site-footer .wrapper{
+      width:100%!important;
+    }
   }
