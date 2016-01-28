@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>Daniel Tamkin / github</title>
+  <title>hi i'm Daniel - i make websites.</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" type="text/css" href="assets/fonts/fonts.css"/>
@@ -14,26 +14,83 @@
   <!--script type="text/javascript" src="assets\js\parallax.min.js"></script-->
 </head>
 <body>
-  <div id="site">
-    <section id="site-hero" style="background: url('assets/img/hero-shoreside.jpg') no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
-      <div class="wrapper">
-        <div class="center Container-Small">
-          <header>
-            <h1>danieltamkin</h1>
-            <h2>Web Designer.</h2>
-            <h2>Photographer.</h2>
-            <ul>
-              <a href="http://github.com/danieltamkin"><li>github</li></a>,
-              <a href="http://danieltamkin.com"><li>view more</li></a>
-            </ul>
-          </header>
+  <div id="site" class="site-wrap ">
+    <div id="site-nav">
+      <div class="wrapper Container-Large">
+        <aside>
+          danieltamkin
+        </aside>
+        <div style="clear:both;">
         </div>
       </div>
+    </div>
+    <section id="site-body" class="Container-Large center">
+      <header class="">
+        <h1 class="title">
+          Web Designer & </br>
+          Developer
+        </h1>
+        <section class="content">
+          <ul>
+            <li>
+              <p><a href="https://github.com/DanielTamkin/starmap">Starmap</a></p>
+              <p>Ghost Theme</p>
+            </li>
+            <li>
+              <p><a href="http://github.com/DanielTamkin/placidity">Placidity</a></p>
+              <p>Ghost Theme</p>
+            </li>
+            <li>
+              <p><a href="http://github.com/DanielTamkin/centerThis.js">centerThis.js</a></p>
+              <p>jQuery plugin</p>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <p><a href="http://github.com/DanielTamkin/AnchorSlide.js">AnchorSlide.js</a></p>
+              <p>jQuery plugin</p>
+            </li>
+            <li>
+              <p><a href="https://github.com/DanielTamkin/showup.js">showup.js</a></p>
+              <p>jQuery plugin</p>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <p><a href="http://github.com/DanielTamkin/debonair">Debonair</a></p>
+              <p>Ghost Theme</p>
+            </li>
+          </ul>
+        </section>
+      </header>
     </section>
+    <footer id="site-footer">
+      <section class="wrapper content Container-Large">
+        <div class="left">
+          <p>
+            Pursuing the art of front-end design, lover of back end programming. Code can be found on
+            <a href="http://github.com/danieltamkin">Github</a>.  Available for hire & freelance.          </p>
+        </div>
+        <div class="right">
+          <p>
+            <a href="mailto:me@danieltamkin.com"><b>Let's get in touch.</b></a>
+          </p>
+        </div>
+        <div style="clear:both;"></div>
+      </section>
+    </footer>
   </div>
+
   <script>
-    $("#site-hero .center").centerThis();     // generic use
-    jQuery("#site-hero h2").fitText(0.7, { minFontSize: '20px', maxFontSize: '90px' });
+    var bodyHeight = $("#site-body.center").height()/2;
+        bodyHeight = bodyHeight/2;
+    console.log(bodyHeight+": bodyHeight");
+    $("#site-body.center").centerThis({
+      browser: false,
+      destructive: true,
+      offsetTop: bodyHeight
+    });
+    jQuery("#site-body h1.title").fitText(0.9, { minFontSize: '30px', maxFontSize: '90px' });
   </script>
 </body>
 </html>
