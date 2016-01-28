@@ -1,4 +1,6 @@
-# danieltamkin.github.io
-A Quick One pager to point people to both my site and github.
+# hi, Names Daniel.
 
-![Screenshot of the onepager](screenshots/danieltamkin.github.io.png)
+I'm a Canadian Born Web designer & Developer.
+
+Available for hire & freelance. [Lets Chat](mailto:me@danieltamkin.com).
+![Screenshot of the the site](screenshots/preview.png)
